@@ -3,50 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ocean Breeze | Liên Hệ</title>
+    <title>Liên Hệ | Urban Edge</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Ocean Breeze</h1>
+        <div class="logo">Urban Edge</div>
         <nav>
             <a href="index.html">Trang chủ</a>
-            <a href="collection.html">Bộ Sưu Tập</a>
-            <a href="contact.html">Liên hệ</a>
+            <a href="shop.html">Cửa hàng</a>
+            <a href="contact.html" class="active">Liên hệ</a>
         </nav>
     </header>
 
     <div class="container">
-        <h2 style="text-align: center; color: #0077b6; margin-bottom: 40px; font-size: 28px;">Kết Nối Với Chúng Tôi</h2>
+        <h2 class="page-title">Drop Us A Line</h2>
         
-        <div class="contact-wrapper">
-            <!-- Thông tin liên hệ -->
-            <div class="contact-info">
-                <h3 style="color: #023e8a; margin-bottom: 15px;">Thông tin cửa hàng</h3>
-                <p style="margin-bottom: 10px;">📍 <strong>Địa chỉ:</strong> Đường Trần Phú, Lộc Thọ, Nha Trang, Khánh Hòa</p>
-                <p style="margin-bottom: 10px;">📞 <strong>Điện thoại:</strong> 090 123 4567</p>
-                <p style="margin-bottom: 10px;">✉️ <strong>Email:</strong> hello@oceanbreeze.vn</p>
-                <p style="margin-bottom: 20px;">🕒 <strong>Giờ mở cửa:</strong> 08:00 - 22:00 (Thứ 2 - Chủ Nhật)</p>
-                <div style="height: 150px; background-color: #caf0f8; display: flex; align-items: center; justify-content: center; border-radius: 5px; color: #0077b6;">
-                    [Bản đồ vị trí cửa hàng]
-                </div>
+        <div class="contact-grid">
+            <div class="contact-details">
+                <h3>Flagship Store</h3>
+                <p><strong>Địa chỉ:</strong> Số 45 Lê Lợi, Bến Nghé, Quận 1, TP. Hồ Chí Minh</p>
+                <p><strong>Hotline:</strong> 1900 8198</p>
+                <p><strong>Email:</strong> contact@urbanedge.vn</p>
+                <br>
+                <h3>Kết nối cộng đồng</h3>
+                <p>Theo dõi các buổi "Drop" sản phẩm giới hạn sớm nhất trên Instagram & TikTok của chúng tôi (@urbanedge.studio).</p>
             </div>
 
-            <!-- Form gửi tin nhắn -->
-            <div class="contact-form">
+            <div class="contact-form-box">
                 <form action="#" method="POST">
-                    <input type="text" id="name" name="name" placeholder="Họ và tên của bạn" required>
-                    <input type="email" id="email" name="email" placeholder="Email liên hệ" required>
-                    <textarea id="message" name="message" rows="6" placeholder="Bạn cần tìm trang phục đi biển như thế nào? Hãy nhắn cho chúng tôi nhé..." required></textarea>
-                    <button type="submit">Gửi Tin Nhắn ✈️</button>
+                    <div class="form-group">
+                        <label for="username">Tên của bạn</label>
+                        <input type="text" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="useremail">Địa chỉ Email</label>
+                        <input type="email" id="useremail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="usermsg">Lời nhắn nội dung</label>
+                        <textarea id="usermsg" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Gửi Yêu Cầu</button>
                 </form>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Ocean Breeze. All rights reserved.</p>
+        <p>&copy; 2026 Urban Edge Studio. All rights reserved.</p>
     </footer>
 
 </body>

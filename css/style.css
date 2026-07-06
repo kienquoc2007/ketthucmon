@@ -6,126 +6,161 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
-    background-color: #fdfdfd;
+    background-color: #f4fbfb; /* Màu xanh nước biển cực nhạt */
     color: #333;
 }
 
 /* Header và Menu điều hướng */
 header {
-    background-color: #111;
+    background-color: #0077b6; /* Xanh đại dương */
     color: #fff;
-    padding: 20px 0;
+    padding: 25px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 header h1 {
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
 nav a {
-    color: #fff;
+    color: #e0fbfc;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: 500;
+    margin: 0 20px;
+    font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #d4af37; /* Màu vàng kim */
+    color: #ffb703; /* Màu vàng nắng */
 }
 
 /* Container chính */
 .container {
-    width: 80%;
+    width: 85%;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 50px auto;
     min-height: 50vh;
 }
 
 /* Trang chủ - Hero Banner */
 .hero {
     text-align: center;
-    background-color: #eaeaea;
-    padding: 60px 20px;
-    margin-bottom: 40px;
+    background: linear-gradient(135deg, #90e0ef 0%, #caf0f8 100%);
+    padding: 80px 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    color: #03045e;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
 }
 
 /* Lưới Sản phẩm */
 .product-grid {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .product-card {
     background: #fff;
-    border: 1px solid #ddd;
+    border: none;
+    border-radius: 8px;
     padding: 20px;
     text-align: center;
     width: 31%;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,119,182,0.15);
+}
+
+.product-img {
+    height: 250px;
+    background-color: #e0fbfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0077b6;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-style: italic;
 }
 
 .product-card h3 {
-    margin: 15px 0 10px;
+    margin: 10px 0;
     font-size: 18px;
+    color: #023e8a;
 }
 
 .price {
-    color: #d4af37;
+    color: #f27059; /* Màu cam san hô */
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* Form Liên hệ */
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
+.contact-wrapper {
+    display: flex;
+    gap: 40px;
     background: #fff;
-    padding: 30px;
-    border: 1px solid #ddd;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.contact-info, .contact-form {
+    flex: 1;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #caf0f8;
+    border-radius: 5px;
+    background-color: #fdfdfd;
 }
 
 .contact-form button {
-    background-color: #111;
+    background-color: #f27059;
     color: #fff;
     border: none;
-    padding: 12px 20px;
+    border-radius: 5px;
+    padding: 15px 20px;
     cursor: pointer;
     width: 100%;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s;
 }
 
 .contact-form button:hover {
-    background-color: #d4af37;
+    background-color: #d65a45;
 }
 
 /* Footer */
 footer {
-    background-color: #111;
-    color: #aaa;
+    background-color: #03045e;
+    color: #caf0f8;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+    padding: 25px 0;
+    margin-top: 50px;
     font-size: 14px;
 }

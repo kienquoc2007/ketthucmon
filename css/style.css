@@ -1,0 +1,131 @@
+/* Thiết lập chung */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+/* Header và Menu điều hướng */
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #d4af37; /* Màu vàng kim */
+}
+
+/* Container chính */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    min-height: 50vh;
+}
+
+/* Trang chủ - Hero Banner */
+.hero {
+    text-align: center;
+    background-color: #eaeaea;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+}
+
+/* Lưới Sản phẩm */
+.product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    width: 31%;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product-card h3 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+}
+
+.price {
+    color: #d4af37;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Form Liên hệ */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #d4af37;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}

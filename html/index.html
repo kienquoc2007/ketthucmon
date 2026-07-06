@@ -3,34 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URBAN EDGE | Streetwear Studio</title>
+    <title>KQFASHION | Thời Trang Cao Cấp</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <div class="logo">Urban Edge</div>
+    <!-- Menu Điều Hướng -->
+    <header class="sticky-header">
+        <a href="index.html" class="logo">KQFASHION</a>
         <nav>
             <a href="index.html" class="active">Trang chủ</a>
-            <a href="shop.html">Cửa hàng</a>
+            <a href="collection.html">Bộ sưu tập</a>
             <a href="contact.html">Liên hệ</a>
         </nav>
     </header>
 
-    <div class="hero-section">
-        <h2>Define Your Style</h2>
-        <p>Bộ sưu tập mang đậm hơi thở đường phố hiện đại 2026.</p>
-        <a href="shop.html" class="btn">Khám phá ngay</a>
-    </div>
+    <!-- Phân vùng 1: Hero Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Phong cách Mùa Thu 2026</h1>
+            <p>Khám phá sự thanh lịch trong từng đường nét.</p>
+            <a href="collection.html" class="btn">Mua sắm ngay</a>
+        </div>
+    </section>
 
-    <div class="container" style="text-align: center; max-width: 800px;">
-        <h3 style="text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px; font-size: 24px;">Tuyên Ngôn Của Bản Thân</h3>
-        <p style="color: #666; font-size: 16px;">Tại Urban Edge, chúng tôi không định nghĩa thời trang, chúng tôi tạo ra không gian để bạn định nghĩa chính mình. Mỗi thiết kế Hoodie, T-shirt hay Cargo Pants đều được chăm chút tỉ mỉ từ chất liệu nỉ bông thô đến phom dáng Oversize chuẩn gu phá cách.</p>
-    </div>
+    <!-- Phân vùng 2: Danh mục nổi bật (Categories) -->
+    <section class="container categories-section">
+        <h2 class="section-title">Danh Mục Nổi Bật</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Thời Trang Nữ">
+                <h3>Thời Trang Nữ</h3>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Thời Trang Nam">
+                <h3>Thời Trang Nam</h3>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Phụ Kiện">
+                <h3>Phụ Kiện</h3>
+            </div>
+        </div>
+    </section>
 
+    <!-- Phân vùng 3: Câu chuyện thương hiệu -->
+    <section class="about-section">
+        <div class="container text-center">
+            <h2 class="section-title">Câu Chuyện Của KQFASHION</h2>
+            <p>Chúng tôi tin rằng thời trang không chỉ là quần áo, mà là ngôn ngữ không lời thể hiện cá tính. KQFASHION cam kết mang đến những thiết kế tinh tế, bền vững và tôn vinh vẻ đẹp chân thực của bạn.</p>
+        </div>
+    </section>
+
+    <!-- Phân vùng 4: Footer chứa Site Map -->
     <footer>
-        <p>&copy; 2026 Urban Edge Studio. All rights reserved.</p>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>Về KQFASHION</h4>
+                <p>Thương hiệu thời trang thiết kế cao cấp, định hình phong cách sống hiện đại và thanh lịch.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Site Map (Sơ đồ)</h4>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="collection.html">Bộ sưu tập</a></li>
+                    <li><a href="contact.html">Liên hệ & Góp ý</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Hỗ trợ khách hàng</h4>
+                <ul>
+                    <li><a href="#">Hướng dẫn chọn size</a></li>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#">Câu hỏi thường gặp (FAQ)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 LUMIÈRE Fashion. Đã đăng ký bản quyền.</p>
+        </div>
     </footer>
-
 </body>
 </html>
